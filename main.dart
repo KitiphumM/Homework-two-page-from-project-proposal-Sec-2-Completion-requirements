@@ -13,221 +13,176 @@ class FigmaToCodeApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) => SignInPage(),
-        '/Profile': (context) => Profile(),
+        '/': (context) => Group15(),
+        '/YumkhunmaeContact': (context) => YumkhunmaeContact(),
       },
     );
   }
 }
 
-class SignInPage extends StatelessWidget {
+class Group15 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          width: 430,
-          height: 932,
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(color: Colors.white),
+          width: 334,
+          height: 42,
           child: Stack(
             children: [
               Positioned(
-                left: 19,
-                top: 688,
+                left: 0,
+                top: 0,
+                child: GestureDetector(
+                  onTap: () {
+                    // Navigate to the "AboutUs" page
+                    Navigator.pushNamed(context, '/YumkhunmaeContact');
+                  },
+                  child: Container(
+                    width: 334,
+                    height: 42,
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 0,
+                          top: 0,
+                          child: Container(
+                            width: 334,
+                            height: 42,
+                            decoration: ShapeDecoration(
+                              color: Color(0xFFBBD8F3),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8)),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          left: 61.30,
+                          top: 12,
+                          child: SizedBox(
+                            width: 127.89,
+                            height: 18,
+                            child: Text(
+                              'Search',
+                              style: TextStyle(
+                                color: Colors.black
+                                    .withOpacity(0.5099999904632568),
+                                fontSize: 15,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w400,
+                                height: 0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 0,
+                top: 12,
                 child: Container(
-                  width: 393,
-                  height: 73,
+                  width: 19.03,
+                  height: 18,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 430,
+          height: 169,
+          decoration: ShapeDecoration(
+            color: Color(0xFF254B94),
+            shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
+          ),
+        ),
+        Container(
+          width: 150.22,
+          height: 36,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 150.22,
+                  height: 36,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFAFCDF0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 23,
+                top: 8,
+                child: SizedBox(
+                  width: 109,
+                  height: 20,
+                  child: Text(
+                    'My Favourites',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 394,
+          height: 71,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 294,
+                  height: 65,
                   child: Stack(
                     children: [
                       Positioned(
                         left: 0,
-                        top: 25,
+                        top: 11,
                         child: Container(
-                          width: 393,
-                          height: 48,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 270,
-                                top: 0,
-                                child: Container(
-                                  width: 123,
-                                  height: 48,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFFFEFEF),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 135,
-                                top: 0,
-                                child: Container(
-                                  width: 123,
-                                  height: 48,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFFFEFEF),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: Container(
-                                  width: 123,
-                                  height: 48,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFFFEFEF),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                          width: 46.04,
+                          height: 46.04,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
                         ),
                       ),
                       Positioned(
-                        left: 48,
-                        top: 35,
-                        child: Container(
-                          width: 345,
-                          height: 33,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 269,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 76,
-                                  height: 32,
-                                  child: Text(
-                                    'Sign In with\nMicrosoft',
-                                    style: TextStyle(
-                                      color: Color(0xFF553535),
-                                      fontSize: 11,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 134,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 76,
-                                  height: 32,
-                                  child: Text(
-                                    'Sign In with Facebook',
-                                    style: TextStyle(
-                                      color: Color(0xFF553535),
-                                      fontSize: 11,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 1,
-                                child: SizedBox(
-                                  width: 76,
-                                  height: 32,
-                                  child: Text(
-                                    'Sign In with Google',
-                                    style: TextStyle(
-                                      color: Color(0xFF553535),
-                                      fontSize: 11,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 5,
-                        top: 30,
-                        child: Container(
-                          width: 304,
-                          height: 41,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 274,
-                                top: 34,
-                                child: Container(
-                                  width: 30,
-                                  height: 30,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://via.placeholder.com/30x30"),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 137,
-                                top: 3,
-                                child: Container(
-                                  width: 32,
-                                  height: 32,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://via.placeholder.com/32x32"),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: Container(
-                                  width: 41,
-                                  height: 41,
-                                  decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://via.placeholder.com/41x41"),
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0,
+                        left: 77.32,
                         top: 0,
                         child: SizedBox(
-                          width: 117,
-                          height: 25,
+                          width: 216.68,
+                          height: 21.67,
                           child: Text(
-                            'Others Options',
+                            'YumKhunMae Restaurant',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 15,
+                              fontSize: 13,
                               fontFamily: 'Inter',
                               fontWeight: FontWeight.w700,
                               height: 0,
@@ -235,61 +190,33 @@ class SignInPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 16,
-                top: 466,
-                child: Container(
-                  width: 399,
-                  height: 202,
-                  child: Stack(
-                    children: [
                       Positioned(
-                        left: 286,
-                        top: 162,
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.pushNamed(context, '/Profile');
-                          },
-                          child: Container(
-                            width: 112.56,
-                            height: 39.55,
-                            child: Stack(
+                        left: 77.32,
+                        top: 43.34,
+                        child: SizedBox(
+                          width: 181.47,
+                          height: 21.67,
+                          child: Text.rich(
+                            TextSpan(
                               children: [
-                                Positioned(
-                                  left: 0,
-                                  top: 0,
-                                  child: Container(
-                                    width: 112.56,
-                                    height: 39.55,
-                                    decoration: ShapeDecoration(
-                                      color: Color(0xFF174295),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                        BorderRadius.circular(90.68),
-                                      ),
-                                    ),
+                                TextSpan(
+                                  text: 'Open',
+                                  style: TextStyle(
+                                    color: Color(0xFF00C313),
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
                                   ),
                                 ),
-                                Positioned(
-                                  left: 34,
-                                  top: 12,
-                                  child: SizedBox(
-                                    width: 44.55,
-                                    height: 14.34,
-                                    child: Text(
-                                      'Log In',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 15,
-                                        fontFamily: 'Inter',
-                                        fontWeight: FontWeight.w400,
-                                        height: 0,
-                                      ),
-                                    ),
+                                TextSpan(
+                                  text: ' ~ Closes 21:00',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
                                   ),
                                 ),
                               ],
@@ -298,140 +225,17 @@ class SignInPage extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 1,
-                        top: 161,
-                        child: Container(
-                          width: 243,
-                          height: 41,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 172,
-                                top: 11,
-                                child: SizedBox(
-                                  width: 71,
-                                  height: 20,
-                                  child: Text(
-                                    'Sign Up',
-                                    style: TextStyle(
-                                      color: Color(0xFF152D82),
-                                      fontSize: 15,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w700,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0,
-                        top: 44,
-                        child: Container(
-                          width: 399,
-                          height: 98,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 0,
-                                top: 56,
-                                child: Container(
-                                  width: 399,
-                                  height: 42,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFE0F0FF),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(8)),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: Container(
-                                  width: 399,
-                                  height: 42,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFE0F0FF),
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(8)),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 12,
-                                top: 12,
-                                child: SizedBox(
-                                  width: 121,
-                                  height: 18,
-                                  child: Text(
-                                    'Email or Phone',
-                                    style: TextStyle(
-                                      color: Colors.black
-                                          .withOpacity(0.5099999904632568),
-                                      fontSize: 15,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 12,
-                                top: 68,
-                                child: SizedBox(
-                                  width: 121,
-                                  height: 18,
-                                  child: Text(
-                                    'Password',
-                                    style: TextStyle(
-                                      color: Colors.black
-                                          .withOpacity(0.5099999904632568),
-                                      fontSize: 15,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 3,
-                        top: 0,
+                        left: 77.32,
+                        top: 21.67,
                         child: SizedBox(
-                          width: 170,
-                          height: 56,
+                          width: 215.33,
+                          height: 21.67,
                           child: Text(
-                            'Sign In',
+                            '106 Street Tuamae RD soi 88',
                             style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 24,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w100,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 3,
-                        top: 172,
-                        child: SizedBox(
-                          width: 235,
-                          height: 22,
-                          child: Text(
-                            'Don’t have an account?',
-                            style: TextStyle(
-                              color: Color(0xFF0C0B0B),
-                              fontSize: 15,
+                              color:
+                              Colors.black.withOpacity(0.6499999761581421),
+                              fontSize: 13,
                               fontFamily: 'Inter',
                               fontWeight: FontWeight.w400,
                               height: 0,
@@ -444,51 +248,43 @@ class SignInPage extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 272,
-                top: 396,
-                child: SizedBox(
-                  width: 149,
-                  height: 38,
-                  child: Text(
-                    'Welcome',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 32,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w600,
-                      height: 0,
-                    ),
+                left: 295,
+                top: 9,
+                child: Container(
+                  width: 34,
+                  height: 34,
+                  padding: const EdgeInsets.only(
+                    top: 2.83,
+                    left: 2.83,
+                    right: 2.83,
+                    bottom: 4.25,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
                   ),
                 ),
               ),
               Positioned(
-                left: -63,
-                top: -24,
+                left: 345,
+                top: 12,
                 child: Container(
-                  width: 714,
-                  height: 404,
+                  width: 29,
+                  height: 29,
                   decoration: ShapeDecoration(
                     image: DecorationImage(
-                      image:
-                      NetworkImage("https://via.placeholder.com/714x404"),
-                      fit: BoxFit.fill,
+                      image: NetworkImage("https://via.placeholder.com/29x29"),
+                      fit: BoxFit.contain,
                     ),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(36.27),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 142,
-                top: 919,
-                child: Container(
-                  width: 135,
-                  height: 5,
-                  decoration: ShapeDecoration(
-                    color: Colors.black,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
+                      side: BorderSide(
+                        width: 1,
+                        color: Colors.black.withOpacity(0),
+                      ),
                     ),
                   ),
                 ),
@@ -496,12 +292,596 @@ class SignInPage extends StatelessWidget {
             ],
           ),
         ),
+        Container(
+          width: 394,
+          height: 71,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 294,
+                  height: 65,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 11,
+                        child: Container(
+                          width: 46.04,
+                          height: 46.04,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 0,
+                        child: SizedBox(
+                          width: 216.68,
+                          height: 21.67,
+                          child: Text(
+                            'PenTarZaap Restaurant',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 43.34,
+                        child: SizedBox(
+                          width: 181.47,
+                          height: 21.67,
+                          child: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: 'Open',
+                                  style: TextStyle(
+                                    color: Color(0xFF00C313),
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' ~ Closes 02:00',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 21.67,
+                        child: SizedBox(
+                          width: 215.33,
+                          child: Text(
+                            '128 Street Khonsuay Rd soi 20',
+                            style: TextStyle(
+                              color:
+                              Colors.black.withOpacity(0.6499999761581421),
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 295,
+                top: 9,
+                child: Container(
+                  width: 34,
+                  height: 34,
+                  padding: const EdgeInsets.only(
+                    top: 2.83,
+                    left: 2.83,
+                    right: 2.83,
+                    bottom: 4.25,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 345,
+                top: 12,
+                child: Container(
+                  width: 29,
+                  height: 29,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/29x29"),
+                      fit: BoxFit.contain,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        color: Colors.black.withOpacity(0),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 394,
+          height: 71,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 294,
+                  height: 65,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 11,
+                        child: Container(
+                          width: 46.04,
+                          height: 46.04,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 0,
+                        child: SizedBox(
+                          width: 216.68,
+                          height: 21.67,
+                          child: Text(
+                            'TeoyYums Restaurant',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 43.34,
+                        child: SizedBox(
+                          width: 181.47,
+                          height: 21.67,
+                          child: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: 'Open',
+                                  style: TextStyle(
+                                    color: Color(0xFF00C313),
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' ~ Closes 22:00',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 21.67,
+                        child: SizedBox(
+                          width: 215.33,
+                          child: Text(
+                            '051 Street BuBoo Rd soi 21',
+                            style: TextStyle(
+                              color:
+                              Colors.black.withOpacity(0.6499999761581421),
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 295,
+                top: 9,
+                child: Container(
+                  width: 34,
+                  height: 34,
+                  padding: const EdgeInsets.only(
+                    top: 2.83,
+                    left: 2.83,
+                    right: 2.83,
+                    bottom: 4.25,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 345,
+                top: 12,
+                child: Container(
+                  width: 29,
+                  height: 29,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/29x29"),
+                      fit: BoxFit.contain,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        color: Colors.black.withOpacity(0),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 394,
+          height: 71,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 294,
+                  height: 65,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 11,
+                        child: Container(
+                          width: 46.04,
+                          height: 46.04,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 0,
+                        child: SizedBox(
+                          width: 216.68,
+                          height: 21.67,
+                          child: Text(
+                            'Aiko’s Yum Omakase Restaurant',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 43.34,
+                        child: SizedBox(
+                          width: 181.47,
+                          height: 21.67,
+                          child: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: 'Open',
+                                  style: TextStyle(
+                                    color: Color(0xFF00C313),
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' ~ Closes 18:00',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 21.67,
+                        child: SizedBox(
+                          width: 215.33,
+                          height: 21.67,
+                          child: Text(
+                            '175 Street YumSalmon Rd soi 19',
+                            style: TextStyle(
+                              color:
+                              Colors.black.withOpacity(0.6499999761581421),
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 295,
+                top: 9,
+                child: Container(
+                  width: 34,
+                  height: 34,
+                  padding: const EdgeInsets.only(
+                    top: 2.83,
+                    left: 2.83,
+                    right: 2.83,
+                    bottom: 4.25,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 345,
+                top: 12,
+                child: Container(
+                  width: 29,
+                  height: 29,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/29x29"),
+                      fit: BoxFit.contain,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        color: Colors.black.withOpacity(0),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 374,
+          height: 65,
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 0,
+                child: Container(
+                  width: 294,
+                  height: 65,
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        top: 11,
+                        child: Container(
+                          width: 46.04,
+                          height: 46.04,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 0,
+                        child: SizedBox(
+                          width: 216.68,
+                          height: 21.67,
+                          child: Text(
+                            'Putter Pro Restaurant',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 43.34,
+                        child: SizedBox(
+                          width: 181.47,
+                          height: 21.67,
+                          child: Text.rich(
+                            TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: 'Open',
+                                  style: TextStyle(
+                                    color: Color(0xFF00C313),
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                                TextSpan(
+                                  text: ' ~ Closes 21:00',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 13,
+                                    fontFamily: 'Inter',
+                                    fontWeight: FontWeight.w700,
+                                    height: 0,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 77.32,
+                        top: 21.67,
+                        child: SizedBox(
+                          width: 215.33,
+                          height: 21.67,
+                          child: Text(
+                            '123 Street PutterPtrPro Rd soi 11',
+                            style: TextStyle(
+                              color:
+                              Colors.black.withOpacity(0.6499999761581421),
+                              fontSize: 13,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 295,
+                top: 9,
+                child: Container(
+                  width: 34,
+                  height: 34,
+                  padding: const EdgeInsets.only(
+                    top: 2.83,
+                    left: 2.83,
+                    right: 2.83,
+                    bottom: 4.25,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 345,
+                top: 12,
+                child: Container(
+                  width: 29,
+                  height: 29,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/29x29"),
+                      fit: BoxFit.contain,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        width: 1,
+                        color: Colors.black.withOpacity(0),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          width: 442,
+          height: 94,
+          decoration: BoxDecoration(color: Colors.white),
+        ),
+        Container(
+          width: 355.37,
+          height: 32.36,
+          child: Stack(children: []),
+        ),
       ],
     );
   }
 }
 
-class Profile extends StatelessWidget {
+class YumkhunmaeContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -519,29 +899,121 @@ class Profile extends StatelessWidget {
           child: Stack(
             children: [
               Positioned(
-                left: -85,
-                top: 374,
+                left: -5,
+                top: 0,
                 child: Container(
-                  width: 509,
-                  height: 714,
+                  width: 415,
+                  height: 156,
+                  decoration: BoxDecoration(color: Colors.white),
+                ),
+              ),
+              Positioned(
+                left: -1,
+                top: 0,
+                child: Container(
+                  width: 445,
+                  height: 192,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image:
+                      NetworkImage("https://via.placeholder.com/445x192"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 19,
+                top: 213,
+                child: SizedBox(
+                  width: 234,
+                  height: 47,
+                  child: Text(
+                    'ยำคุณเเม่',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 40,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: -7,
+                top: 0,
+                child: Container(
+                  width: 451,
+                  height: 192,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image:
+                      NetworkImage("https://via.placeholder.com/451x192"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 19,
+                top: 268,
+                child: SizedBox(
+                  width: 304,
+                  height: 35,
+                  child: Text(
+                    '10.00-21.00',
+                    style: TextStyle(
+                      color: Color(0xFF807070),
+                      fontSize: 20,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 335,
+                top: 268,
+                child: Container(
+                  width: 75,
+                  height: 24,
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 67,
-                        top: 467,
+                        left: 0,
+                        top: 0,
                         child: Container(
-                          width: 442,
-                          height: 94,
-                          decoration: BoxDecoration(color: Color(0xFFFFF5F5)),
+                          width: 75,
+                          height: 24,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFF25FF02),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                          ),
                         ),
                       ),
                       Positioned(
-                        left: 116,
-                        top: 492,
-                        child: Container(
-                          width: 355.37,
-                          height: 32.36,
-                          child: Stack(children: []),
+                        left: 13,
+                        top: 0,
+                        child: SizedBox(
+                          width: 60,
+                          height: 16,
+                          child: Text(
+                            'OPEN',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontFamily: 'Sofia Sans',
+                              fontWeight: FontWeight.w400,
+                              height: 0,
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -549,31 +1021,16 @@ class Profile extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 0,
-                top: -61,
-                child: Container(
-                  width: 445,
-                  height: 350,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image:
-                      NetworkImage("https://via.placeholder.com/445x350"),
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 17,
-                top: 90,
+                left: 57,
+                top: 316,
                 child: SizedBox(
-                  width: 249,
-                  height: 60,
+                  width: 76,
+                  height: 22,
                   child: Text(
-                    'Profile',
+                    'REVIEW',
                     style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 48,
+                      color: Colors.black,
+                      fontSize: 20,
                       fontFamily: 'Sofia Sans',
                       fontWeight: FontWeight.w700,
                       height: 0,
@@ -582,285 +1039,53 @@ class Profile extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 17,
-                top: 150,
-                child: Container(
-                  width: 395,
-                  height: 121,
-                  decoration: ShapeDecoration(
-                    color: Color(0xFFE4FFFD),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    shadows: [
-                      BoxShadow(
-                        color: Color(0x3F000000),
-                        blurRadius: 4,
-                        offset: Offset(0, 4),
-                        spreadRadius: 0,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 85,
-                top: 161,
-                child: Container(
-                  width: 311,
-                  height: 47,
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        left: 282,
-                        top: 4,
-                        child: Container(
-                          width: 29,
-                          height: 29,
-                          decoration: ShapeDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage(
-                                  "https://via.placeholder.com/29x29"),
-                              fit: BoxFit.contain,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              side: BorderSide(
-                                width: 1,
-                                color: Colors.black.withOpacity(0),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0,
-                        top: 0,
-                        child: Container(
-                          width: 229,
-                          height: 47,
-                          child: Stack(
-                            children: [
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: SizedBox(
-                                  width: 229,
-                                  height: 21,
-                                  child: Text(
-                                    'Catherine Rakkarnkin',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 21,
-                                      fontFamily: 'Sofia Sans',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 0,
-                                top: 26,
-                                child: SizedBox(
-                                  width: 229,
-                                  height: 21,
-                                  child: Text(
-                                    'PLATINUM MEMBERSHIP | 15,000',
-                                    style: TextStyle(
-                                      color: Color(0xFF6A6363),
-                                      fontSize: 15,
-                                      fontFamily: 'Sofia Sans',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 34,
-                top: 215,
-                child: Container(
-                  width: 186,
-                  height: 36,
-                  decoration: BoxDecoration(color: Color(0xFFFFD8D8)),
-                ),
-              ),
-              Positioned(
-                left: 216,
-                top: 215,
-                child: Container(
-                  width: 180,
-                  height: 36,
-                  decoration: BoxDecoration(color: Color(0xFFFFD8D8)),
-                ),
-              ),
-              Positioned(
-                left: 82,
-                top: 222,
+                left: 55,
+                top: 613,
                 child: SizedBox(
-                  width: 95,
-                  height: 23,
+                  width: 242,
+                  height: 32,
                   child: Text(
-                    'Edit Profile',
+                    'RECOMMENDED MENUs',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 17,
+                      fontSize: 20,
                       fontFamily: 'Sofia Sans',
-                      fontWeight: FontWeight.w400,
+                      fontWeight: FontWeight.w700,
                       height: 0,
                     ),
                   ),
                 ),
               ),
               Positioned(
-                left: 253,
-                top: 222,
-                child: SizedBox(
-                  width: 105,
-                  height: 23,
-                  child: Text(
-                    'Point Reward',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 17,
-                      fontFamily: 'Sofia Sans',
-                      fontWeight: FontWeight.w400,
-                      height: 0,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 0,
-                top: 443,
+                left: 19,
+                top: 604,
                 child: Container(
-                  width: 415,
-                  height: 345,
-                  decoration: ShapeDecoration(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 11,
-                top: 304,
-                child: Container(
-                  width: 404,
-                  height: 195,
+                  width: 30.69,
+                  height: 38,
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 0,
-                        top: 0,
+                        left: 10.23,
+                        top: 34.35,
                         child: Container(
-                          width: 404,
-                          height: 195,
+                          width: 10.23,
+                          height: 3.65,
                           decoration: ShapeDecoration(
-                            color: Color(0xFFE7E6E6),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
+                            color:
+                            Colors.black.withOpacity(0.20000000298023224),
+                            shape: OvalBorder(),
                           ),
                         ),
                       ),
                       Positioned(
-                        left: 10,
-                        top: 15,
-                        child: SizedBox(
-                          width: 375,
-                          height: 28,
-                          child: Text(
-                            'About Us',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 10,
-                        top: 51,
-                        child: SizedBox(
-                          width: 375,
-                          height: 28,
-                          child: Text(
-                            'Report Systems',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 10,
-                        top: 87,
-                        child: SizedBox(
-                          width: 375,
-                          height: 28,
-                          child: Text(
-                            'HiwKao Benefits',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 10,
-                        top: 120,
-                        child: SizedBox(
-                          width: 375,
-                          height: 28,
-                          child: Text(
-                            'Help',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 9,
-                        top: 153,
-                        child: SizedBox(
-                          width: 375,
-                          height: 28,
-                          child: Text(
-                            'HiwKao Privilege',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 20,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0,
-                            ),
-                          ),
+                        left: 8.04,
+                        top: 8.04,
+                        child: Container(
+                          width: 14.62,
+                          height: 14.62,
+                          clipBehavior: Clip.antiAlias,
+                          decoration: BoxDecoration(),
+                          child: Stack(children: []),
                         ),
                       ),
                     ],
@@ -869,119 +1094,89 @@ class Profile extends StatelessWidget {
               ),
               Positioned(
                 left: 21,
-                top: 522,
+                top: 346,
                 child: Container(
                   width: 389,
-                  height: 295,
+                  height: 236,
                   child: Stack(
                     children: [
                       Positioned(
-                        left: 0,
-                        top: 91,
+                        left: 102,
+                        top: 10,
                         child: Container(
-                          width: 389,
-                          height: 44,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFA1F9F4),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 97,
-                        top: 247,
-                        child: Container(
-                          width: 196,
-                          height: 48,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFC23232),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        left: 0,
-                        top: 39,
-                        child: Container(
-                          width: 389,
-                          height: 89,
-                          child: Stack(
+                          width: 120,
+                          height: 20,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: Container(
-                                  width: 389,
-                                  height: 44,
-                                  decoration: ShapeDecoration(
-                                    color: Color(0xFFA1F9F4),
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 14,
-                                top: 7,
-                                child: Container(
-                                  width: 30,
-                                  height: 30,
-                                  padding: const EdgeInsets.only(
-                                    top: 2.50,
-                                    left: 2.50,
-                                    right: 2.50,
-                                    bottom: 3.75,
-                                  ),
-                                  clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(),
-                                  child: Row(
-                                    mainAxisSize: MainAxisSize.min,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    crossAxisAlignment:
-                                    CrossAxisAlignment.center,
-                                    children: [],
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 54,
-                                top: 10,
-                                child: SizedBox(
-                                  width: 207,
-                                  height: 27,
-                                  child: Text(
-                                    'Your Favourites',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                left: 53,
-                                top: 62,
-                                child: SizedBox(
-                                  width: 207,
-                                  height: 27,
-                                  child: Text(
-                                    'Privacy ',
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 18,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w400,
-                                      height: 0,
-                                    ),
-                                  ),
+                              Container(),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 112,
+                        top: 30,
+                        child: Container(
+                          width: 12,
+                          height: 13,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 0,
+                        top: 4,
+                        child: Container(
+                          width: 389,
+                          height: 232,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFFF3EEEE),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(13),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 52,
+                        top: 17,
+                        child: Text(
+                          'October 11 •',
+                          style: TextStyle(
+                            color: Color(0xFF65676B),
+                            fontSize: 10,
+                            fontFamily: 'Roboto',
+                            fontWeight: FontWeight.w400,
+                            height: 0.40,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 52,
+                        top: 0,
+                        child: Container(
+                          width: 129,
+                          height: 40,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Thanapat Nonpassopon',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 12,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w600,
+                                  height: 0.28,
                                 ),
                               ),
                             ],
@@ -989,19 +1184,76 @@ class Profile extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        left: 0,
-                        top: 0,
+                        left: 14,
+                        top: 13,
+                        child: Container(
+                          width: 27,
+                          height: 27,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 27,
+                                height: 27,
+                                decoration: ShapeDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://via.placeholder.com/27x27"),
+                                    fit: BoxFit.fill,
+                                  ),
+                                  shape: OvalBorder(),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 195,
+                        top: 57,
+                        child: Container(
+                          width: 168,
+                          height: 110,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://via.placeholder.com/168x110"),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 15,
+                        top: 167,
                         child: SizedBox(
-                          width: 122,
-                          height: 25,
+                          width: 341,
+                          height: 28,
                           child: Text(
-                            'PINNED MENUS',
+                            'อาหารอร่อยมากค่ะ น้ำยำถึงรสมากๆๆ',
                             style: TextStyle(
                               color: Colors.black,
-                              fontSize: 17,
-                              fontFamily: 'Sofia Sans',
-                              fontWeight: FontWeight.w700,
-                              height: 0.14,
+                              fontSize: 13,
+                              fontFamily: 'Roboto',
+                              fontWeight: FontWeight.w400,
+                              height: 0.24,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        left: 15,
+                        top: 57,
+                        child: Container(
+                          width: 175,
+                          height: 110,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://via.placeholder.com/175x110"),
+                              fit: BoxFit.fill,
                             ),
                           ),
                         ),
@@ -1011,60 +1263,322 @@ class Profile extends StatelessWidget {
                 ),
               ),
               Positioned(
-                left: 36,
-                top: 623,
+                left: 24,
+                top: 653,
                 child: Container(
-                  width: 25,
-                  height: 23,
+                  width: 383,
+                  height: 82,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFF3EFEF),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 32,
+                top: 660,
+                child: Container(
+                  width: 95,
+                  height: 67,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/95x67"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 148,
+                top: 671,
+                child: SizedBox(
+                  width: 229,
+                  height: 31,
+                  child: Text(
+                    'ยำมาม่าไข่เค็ม',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 148,
+                top: 696,
+                child: SizedBox(
+                  width: 99,
+                  height: 19,
+                  child: Text(
+                    'Price: 60 THB',
+                    style: TextStyle(
+                      color: Color(0xFF6F6B6B),
+                      fontSize: 13,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 360,
+                top: 678,
+                child: Container(
+                  width: 32,
+                  height: 32,
+                  padding: const EdgeInsets.all(2.67),
                   clipBehavior: Clip.antiAlias,
                   decoration: BoxDecoration(),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 25,
-                        height: 23,
-                        child: Stack(children: []),
-                      ),
-                    ],
+                    children: [],
                   ),
                 ),
               ),
               Positioned(
-                left: 177,
-                top: 780,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.pushNamed(context, '/');
-                  },
-                  child: SizedBox(
-                    width: 103,
-                    height: 27,
-                    child: Text(
-                      'SIGN OUT',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w400,
-                        height: 0,
-                      ),
+                left: 24,
+                top: 743,
+                child: Container(
+                  width: 383,
+                  height: 86,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFF3EFEF),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                 ),
               ),
               Positioned(
-                left: 141,
-                top: 778,
+                left: 148,
+                top: 761,
+                child: SizedBox(
+                  width: 229,
+                  child: Text(
+                    'ยำกุ้งสด',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 18,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 148,
+                top: 786,
+                child: SizedBox(
+                  width: 99,
+                  height: 19,
+                  child: Text(
+                    'Price: 125 THB',
+                    style: TextStyle(
+                      color: Color(0xFF6F6B6B),
+                      fontSize: 13,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 29,
+                top: 748,
                 child: Container(
-                  width: 29,
-                  height: 29,
+                  width: 98,
+                  height: 73,
+                  decoration: ShapeDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/98x73"),
+                      fit: BoxFit.fill,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 360,
+                top: 768,
+                child: Container(
+                  width: 32,
+                  height: 32,
+                  padding: const EdgeInsets.all(2.67),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: BoxDecoration(),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [],
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 11,
+                top: 46,
+                child: GestureDetector(
+                  onTap: () {
+                    // Navigate to the "AboutUs" page
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: Container(
+                    width: 38,
+                    height: 38,
+                    padding: const EdgeInsets.only(
+                        top: 3.17, right: 6.33, bottom: 3.17),
+                    clipBehavior: Clip.antiAlias,
+                    decoration: BoxDecoration(),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 356,
+                top: 613,
+                child: SizedBox(
+                  width: 73,
+                  height: 25,
+                  child: Text(
+                    'MORE',
+                    style: TextStyle(
+                      color: Color(0xFF130896),
+                      fontSize: 20,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 355,
+                top: 318,
+                child: SizedBox(
+                  width: 73,
+                  height: 25,
+                  child: Text(
+                    'MORE',
+                    style: TextStyle(
+                      color: Color(0xFF130896),
+                      fontSize: 20,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 50,
+                top: 842,
+                child: Container(
+                  width: 159,
+                  height: 51,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFB0F0FF),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 69,
+                top: 851,
+                child: SizedBox(
+                  width: 149,
+                  height: 42,
+                  child: Text(
+                    'Maps',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 218,
+                top: 842,
+                child: Container(
+                  width: 159,
+                  height: 51,
+                  decoration: ShapeDecoration(
+                    color: Color(0xFFCBFFC6),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 77,
+                top: 848,
+                child: Container(
+                  width: 25,
+                  height: 35,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage("https://via.placeholder.com/29x29"),
-                      fit: BoxFit.contain,
+                      image: NetworkImage("https://via.placeholder.com/25x35"),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 237,
+                top: 851,
+                child: SizedBox(
+                  width: 149,
+                  height: 42,
+                  child: Text(
+                    'Contact',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontFamily: 'Sofia Sans',
+                      fontWeight: FontWeight.w400,
+                      height: 0,
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 232,
+                top: 851,
+                child: Container(
+                  width: 30,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage("https://via.placeholder.com/30x30"),
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),
